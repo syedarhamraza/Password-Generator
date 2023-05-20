@@ -4,15 +4,18 @@ body{
     background-color: #1b262c;
     color: white;
     font-family: 'Oswald', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
 }
 
-.generator{
+.generator {
     background-color: #0f4c75;
-    width: 400px;
+    max-width: 400px;
     margin: 150px auto;
     padding: 20px;
     border-radius: 10px;
-}
+    box-sizing: border-box;
+  }
 
 span.title{
     display: flex;
@@ -108,3 +111,9 @@ button.generate{
     color: #3282b8;
     cursor: pointer;
 }
+
+@media (max-width: 768px) {
+    .footer {
+      font-size: 1rem;
+    }
+  }
